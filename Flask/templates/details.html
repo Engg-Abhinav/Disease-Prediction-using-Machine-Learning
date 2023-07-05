@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Disease Details</title>
+</head>
+
+<body style="background-image: url('https://i.pinimg.com/originals/08/fa/02/08fa0275674fee050c47e3b1abd86b6b.jpg');">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:rgb(3, 126, 249);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Disease Prediction</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Flask/templates/details.html">Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Model</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="conatiner">
+        <h2 style="text-align: center; color:aliceblue; margin-top:36px">Disease Prediction</h2>
+        <div class="container">
+            <ul class="list-unstyled">
+                <li style="text-align: center; color:aliceblue;">You have the input box below where you can select your
+                    symptoms.</li>
+                <li style="text-align: center; color:aliceblue;">You can input the number of symptoms you have and leave
+                    others blank</li>
+                <li style="text-align: center; color:aliceblue;">This is the list of the symptoms.If you have the
+                    symptoms which are from this list please enter the symptom in the same form as shown below.</li>
+                <div class="row">
+                    <div class="col-sm">
+                        <li style="color:aliceblue;">
+                            <ul>
+                                <li style="margin-left:100px; justify-content:center;">itching</li>
+                                <li style="margin-left:100px; justify-content:center;">muscle-pain</li>
+                                <li style="margin-left:100px; justify-content:center;">shivering</li>
+                                <li style="margin-left:100px; justify-content:center;">joint-pain</li>
+                                <li style="margin-left:100px; justify-content:center;">stomach_pain</li>
+                                <li style="margin-left:100px; justify-content:center;">vomiting</li>
+                                <li style="margin-left:100px; justify-content:center;">fatigue</li>
+                                <li style="margin-left:100px; justify-content:center;">weight_loss</li>
+                                <li style="margin-left:100px; justify-content:center;">restlessness</li>
+                                <li style="margin-left:100px; justify-content:center;">lethargy</li>
+                                <li style="margin-left:100px; justify-content:center;">high_fever</li>
+                                <li style="margin-left:100px; justify-content:center;">headache</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="col-sm">
+                        <li style="color:aliceblue;">
+                            <ul>
+                                <li style="margin-left:100px; justify-content:center;">constipation</li>
+                                <li style="margin-left:100px; justify-content:center;">abdominal_pain</li>
+                                <li style="margin-left:100px; justify-content:center;">diarrhoea</li>
+                                <li style="margin-left:100px; justify-content:center;">mild_fever</li>
+                                <li style="margin-left:100px; justify-content:center;">malaise</li>
+                                <li style="margin-left:100px; justify-content:center;">phlegm</li>
+                                <li style="margin-left:100px; justify-content:center;">congestion</li>
+                                <li style="margin-left:100px; justify-content:center;">chest_pain</li>
+                                <li style="margin-left:100px; justify-content:center;">fast_heart_rate</li>
+                                <li style="margin-left:100px; justify-content:center;">neck_pain</li>
+                                <li style="margin-left:100px; justify-content:center;">dizziness</li>
+                                <li style="margin-left:100px; justify-content:center;">belly_pain</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="col-sm">
+                        <li style="color:aliceblue;">
+                            <ul>
+                                <li style="margin-left:100px; justify-content:center ">iritability</li>
+                                <li style="margin-left:100px; justify-content:center ">countinous_sneezing</li>
+                                <li style="margin-left:100px; justify-content:center ">puffy_face_and_eyes</li>
+                                <li style="margin-left:100px; justify-content:center ">abnormal_menstruation</li>
+                                <li style="margin-left:100px; justify-content:center ">increased_appetite</li>
+                                <li style="margin-left:100px; justify-content:center ">lack_of_concentration</li>
+                                <li style="margin-left:100px; justify-content:center ">visual_disturbances</li>
+                                <li style="margin-left:100px; justify-content:center ">receiving_blood_transfusion</li>
+                                <li style="margin-left:100px; justify-content:center ">pain_behind_the_eyes</li>
+                                <li style="margin-left:100px; justify-content:center ">history_of_alcohol_consumption
+                                </li>
+                                <li style="margin-left:100px; justify-content:center ">blood_in_sputum</li>
+                                <li style="margin-left:100px; justify-content:center ">yellowing_of_eyespalpitations
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Symptom" class="tabcontent" style="margin:260px">
+        <form style="color:aliceblue; " name="SymptomForm" id="SymForm" method="POST" action="/results">
+            <div class="head">
+                Symptom Checker
+            </div>
+            <div class="form-group" style="color:aliceblue; margin:45px">
+                <!-- <select multiple data-role="tagsinput" class="form-control" size=1>
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </select> -->
+                <label for="Symptom1">Symptom-1</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom1"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom2">Symptom-2</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom2"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom3">Symptom-3</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom3"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom4">Symptom-4</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom4"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom5">Symptom-5</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom5"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom5">Symptom-6</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom6"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom5">Symptom-7</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom7"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom5">Symptom-8</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom8"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+                <label for="Symptom5">Symptom-9</label>
+                <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom9"
+                    placeholder="Enter Symptom">
+                <datalist id="symp">
+                    {% for symp in symptoms %}
+                    <option value="{{symp}}">{{symp}}</option>
+                    {% endfor %}
+                </datalist>
+
+            </div>
+            <button type="submit" class="btn btn-success btn-lg"
+                style="background-color:rgb(179, 213, 248); text-align:center; margin-left:450px; justify-content:center;"
+                name=form>Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
