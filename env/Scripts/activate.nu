@@ -32,7 +32,7 @@ export-env {
       }
     }
 
-    let virtual_env = 'C:\Users\Abhin\Downloads\Disease Prediction\env'
+    let virtual_env = 'C:\Users\Abhin\OneDrive\Desktop\Disease-Prediction-using-Machine-Learning\env'
     let bin = 'Scripts'
 
     let is_windows = ($nu.os-info.family) == 'windows'

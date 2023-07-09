@@ -1,4 +1,4 @@
-@set "VIRTUAL_ENV=C:\Users\Abhin\Downloads\Disease Prediction\env"
+@set "VIRTUAL_ENV=C:\Users\Abhin\OneDrive\Desktop\Disease-Prediction-using-Machine-Learning\env"
 
 @if defined _OLD_VIRTUAL_PROMPT (
     @set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
